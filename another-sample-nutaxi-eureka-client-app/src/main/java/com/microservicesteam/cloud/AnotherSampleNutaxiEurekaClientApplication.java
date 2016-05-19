@@ -10,16 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @RestController
 @SpringBootApplication
-@RequestMapping("/nutaxi-services/{applicationName}")
-public class AnotherSampleNutaxiEurekaClientAppApplication {
+public class AnotherSampleNutaxiEurekaClientApplication {
 
-	@RequestMapping("hello")
-	public String hello(@PathVariable String applicationName) {
-		return "Hello " + applicationName + "!";
+	@RequestMapping("/hello/{subject}")
+	public String hello(@PathVariable String subject) {
+		return "Hello " + subject + "!";
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(AnotherSampleNutaxiEurekaClientAppApplication.class, args);
+		SpringApplication.run(AnotherSampleNutaxiEurekaClientApplication.class, args);
 	}
 
 }
