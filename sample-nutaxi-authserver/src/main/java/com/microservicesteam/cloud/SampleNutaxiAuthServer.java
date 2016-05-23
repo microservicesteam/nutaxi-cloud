@@ -32,10 +32,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableAutoConfiguration
 @Controller
 @SessionAttributes("authorizationRequest")
-public class SampleNutaxiAuthserverApplication extends WebMvcConfigurerAdapter {
+public class SampleNutaxiAuthServer extends WebMvcConfigurerAdapter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleNutaxiAuthserverApplication.class, args);
+		SpringApplication.run(SampleNutaxiAuthServer.class, args);
 	}
 
 	@Override

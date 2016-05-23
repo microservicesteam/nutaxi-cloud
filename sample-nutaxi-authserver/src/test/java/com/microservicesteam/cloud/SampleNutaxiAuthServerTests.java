@@ -25,10 +25,10 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = SampleNutaxiAuthserverApplication.class)
+@SpringApplicationConfiguration(classes = SampleNutaxiAuthServer.class)
 @WebAppConfiguration
 @IntegrationTest("server.port:0")
-public class SampleNutaxiAuthserverApplicationTests {
+public class SampleNutaxiAuthServerTests {
 
 	@Value("${local.server.port}")
 	private int port;
